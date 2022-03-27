@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AvetTumo/GoL/issues"
   },
-  "homepage": "https://github.com/AvetTumo/GoL#readme"
+  "homepage": "https://github.com/AvetTumo/GoL#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
