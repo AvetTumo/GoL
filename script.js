@@ -2,10 +2,10 @@
 var socket = io();
 
 //էստեղ նախկին սկրիպտ ֆայլիցդ տպում և էստեղ ես բերում setup ֆունկցիան
- side = 30
+ side = 10
 
 function setup() {
-    createCanvas(7 * side, 13 * side);
+    createCanvas(25 * side, 26 * side);
     background("#acacac");
 }
 
@@ -40,5 +40,13 @@ setInterval(
     socket.on('send matrix', nkarel)
     },1000
 )
+
+function addGrassEater() {
+    socket.emit("add grassEater")
+}
+
+function addGrass() {
+    socket.emit("add grass")
+}
 
 //էստեղ այսքանը, հիմա նորից գնա սերվեր ֆայլ
